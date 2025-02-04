@@ -56,19 +56,3 @@ To preview the production build locally, run:
 ```js
 yarn preview
 ```
-
-## Running Tests
-
-This project uses Vitest for unit testing. To run the tests, simply execute:
-
-```js
-yarn test
-```
-
-By default, this will run all the tests in the project. Vitest will automatically watch for changes and rerun the tests if needed.
-
-To gather coverage of test, execute:
-
-```js
-yarn coverage
-```

@@ -1,12 +1,11 @@
-# React + Vite + TypeScript + Vitest Project
+# React + Vite + TypeScript Project
 
-This is a modern development setup using Vite for fast development, TypeScript for type safety, and Vitest for unit testing. This project serves as a template to quickly get started with a front-end development environment optimized for React (or other frameworks) with unit tests.
+This is a modern development setup using Vite for fast development, and TypeScript for type safety. This project serves as a template to quickly get started with a front-end development environment optimized for React (or other frameworks) with unit tests.
 
 ## Features
 
 - Vite for fast bundling and development
 - TypeScript for type safety and better tooling
-- Vitest for fast and easy unit testing
 - React
 
 ## Prerequisites

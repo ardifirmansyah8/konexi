@@ -1,4 +1,15 @@
-const ConnectGoogleAccount = () => {
+import { useDispatch } from "react-redux";
+
+import { AppDispatch } from "../store/store";
+import { setStatus } from "../store/slices/rootSlice";
+
+interface Props {
+  index: number;
+}
+
+const ConnectGoogleAccount = ({ index }: Props) => {
+  const dispatch = useDispatch<AppDispatch>();
+
   return (
     <>
       <div className="flex items-center mb-2 px-2">
@@ -12,7 +23,10 @@ const ConnectGoogleAccount = () => {
           </label>
         </div>
       </div>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white text-xs py-1 px-3 rounded mt-2 mb-4">
+      <button
+        className="bg-blue-500 hover:bg-blue-700 text-white text-xs py-1 px-3 rounded mt-2 mb-4 cursor-pointer"
+        onClick={() => dispatch(setStatus({ index, status: "login" }))}
+      >
         Connect
       </button>
     </>
